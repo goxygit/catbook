@@ -3,6 +3,7 @@ import SideBar from "./front/sideBar/sideBar";
 import "./App.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Content from "./front/profile/profile";
+import Dialogs from "./front/dialogs/dialogs";
 const App =() => {
   return (
     <BrowserRouter>
@@ -11,7 +12,8 @@ const App =() => {
       <SideBar />
       <div>
       <Routes>
-        <Route path="/profile/profile"  element={<Content />  }/>
+        <Route path="/profile"  element={<Content />  }/>
+        <Route path="/dialogs" element={<Dialogs />}/>
       </Routes>
       </div>
       
