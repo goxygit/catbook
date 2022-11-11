@@ -15,7 +15,9 @@ const createPost = (props) => {
 
   return (
     <div>
-      <div></div>
+      <div>
+        
+      </div>
       <div>
         
         {PostsElement}

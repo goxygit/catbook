@@ -1,13 +1,8 @@
-body {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .app-wrapper{
   display: grid;
-  width: 1200px;
-  grid-template: 80px 750px/1fr 5fr;
+  grid-template: auto auto/1fr 5fr;
   grid-template-areas:"h h"
   "n p" ;
-  grid-gap: 10px;
+  
 }
