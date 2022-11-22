@@ -1,8 +1,11 @@
-
+body{
+  font-family: 'Segoe UI Historic';
+}
 .app-wrapper{
   display: grid;
-  grid-template: auto auto/1fr 5fr;
-  grid-template-areas:"h h"
-  "n p" ;
+  grid-template: 56px auto/1fr 5fr;
+  grid-template-areas:"h h h"
+  "n p a" ;
   
 }
+
