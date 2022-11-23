@@ -9,7 +9,7 @@ const SideBar = (props) => {
         <div className={n.firstBar}>
           <div className={classNames(n.navLink_1, n.background_hover)}>
             <div className={n.spanNav}>
-              <NavLink className={classNames(n.a, n.label)}>
+              <NavLink to="/profile" className={classNames(n.a, n.label)}>
                 <i className={n.i_1}></i>
                 <p
                   className={classNames(n.pInNavLink, n.divBeforeP, n.elemet_2)}
@@ -24,7 +24,7 @@ const SideBar = (props) => {
           >
             <div>
               <div className={n.spanNav}>
-                <NavLink className={classNames(n.label, n.a)}>
+                <NavLink to="" className={classNames(n.label, n.a)}>
                   <img
                     className={classNames(n.Profile, n.elemet_1, n.divInA)}
                     src={logo}
@@ -44,7 +44,7 @@ const SideBar = (props) => {
             </div>
           </div>
         </div>
-        <div style={{ padding: "8px 0" }} className={n.twoBar}>
+        <div style={{ padding: "8px 0" }} >
           <div>
             <div className={classNames(n.navLink_3, n.background_hover)}>
               <div
@@ -96,7 +96,7 @@ const SideBar = (props) => {
                       n.elemet_2
                     )}
                   >
-                   Меню
+                    Меню
                   </p>
                 </NavLink>
               </div>

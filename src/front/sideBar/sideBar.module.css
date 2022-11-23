@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Segue UI Historic' format("truetype");
-    src: url(../fonts/segoe-ui-historic.ttf);
-    font-style: normal; 
-    font-weight: normal;
-}
+
 .nav {
     grid-area: n;
     font-size: 24px;
@@ -13,15 +8,9 @@
     display: grid;
     padding: 16px 0 8px;
     grid-area: firstBar;
+    
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "navLink_1 " "navLink_2";
-    grid-template-rows: 1fr 1fr;
-}
-.twoBAr{
-    display: grid;
-    padding:  8px 0;
-    grid-area: twoBar;
-    grid-template-areas: "navLink_3 " "navLink_4"  "navLink_5"  "navLink_6" "navLink_7";
-    grid-template-rows: 1fr 1fr;
 }
 .navLink_1 {
     grid-area: navLink_1;
@@ -117,7 +106,7 @@
     height: 100%;
 }
 .background_hover:hover{
-    background-color:rgb(201, 201, 201); 
+    background-color:rgb(224, 224, 224); 
     border-radius: 5px;
     transition: .3s;
 }
