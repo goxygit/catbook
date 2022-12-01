@@ -4,7 +4,7 @@ import "./App.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Content from "./front/profile/profile";
 import Dialogs from "./front/dialogs/dialogs";
-const App =() => {
+const App =(props) => {
   return (
     <BrowserRouter>
     <div className="app-wrapper">
@@ -12,7 +12,7 @@ const App =() => {
       <SideBar />
       <div>
       <Routes>
-        <Route path="/profile"  element={<Content />  }/>
+        <Route path="/profile"  element={<Content img={props.img}/>  }/>
         <Route path="/dialogs" element={<Dialogs />}/>
       </Routes>
       </div>

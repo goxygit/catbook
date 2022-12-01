@@ -1,18 +1,22 @@
 import p from "./profile.module.css";
 import classNames from "classnames";
 import logo from "../img/Profile.png";
+import plus from "../img/plus.png";
+import Storis from "./storis/storis";
 import { NavLink } from "react-router-dom";
 const Content = (props) => {
   return (
     <div
-      style={{ maxWidth: "100%", display: "flex", justifyContent: "center",padding:'0 32px'}}
+      style={{
+        maxWidth: "100%",
+        display: "flex",
+        justifyContent: "center",
+        padding: "0 32px",
+      }}
     >
       <div className={p.Profile}>
-        <div className={classNames(p.firstBar, p.gap)}>
-          <div
-            className={classNames(p.contentBar, p.box_shadow, p.bar_1)}
-            style={{ padding: "8px 0" }}
-          ></div>
+        <div className={classNames(p.firstBar)}>
+          <Storis img={props.img}/>
         </div>
         <div className={classNames(p.twoBar, p.gap)}>
           <div
@@ -51,17 +55,18 @@ const Content = (props) => {
               </div>
             </div>
             <div className={p.bottomBar}>
-              <div className={p.background_hover}
+              <div
+                className={p.background_hover}
                 style={{
                   gridArea: "firstColumn",
-                  borderRadius:'10px',
+                  borderRadius: "10px",
                   padding: "8px",
                   height: "24px",
                   display: "flex",
                   justifyContent: "center",
                 }}
               >
-                <NavLink to="#" style={{textDecoration:'none'}}>
+                <NavLink to="#" style={{ textDecoration: "none" }}>
                   <div className={p.bottomBarEl}>
                     <div style={{ gridArea: "img" }}>
                       <i
@@ -77,27 +82,41 @@ const Content = (props) => {
                         }}
                       ></i>
                     </div>
-                    <div style={{ gridArea: "text", display:'flex', alignSelf:'center' }}>
-                        <p style={{fontSize:'15px', width:'100%', height:'16px', margin:'0', color:'gray', fontFamily:'sans-serif',}}>
-                            Прямий Ефір
-                        </p>
+                    <div
+                      style={{
+                        gridArea: "text",
+                        display: "flex",
+                        alignSelf: "center",
+                      }}
+                    >
+                      <p
+                        style={{
+                          fontSize: "15px",
+                          width: "100%",
+                          height: "16px",
+                          margin: "0",
+                          color: "gray",
+                          fontFamily: "sans-serif",
+                        }}
+                      >
+                        Прямий Ефір
+                      </p>
                     </div>
-                    
-                    
                   </div>
                 </NavLink>
               </div>
-              <div className={p.background_hover}
+              <div
+                className={p.background_hover}
                 style={{
                   gridArea: "twoColumn",
-                  borderRadius:'10px',
+                  borderRadius: "10px",
                   padding: "8px",
                   height: "24px",
                   display: "flex",
                   justifyContent: "center",
                 }}
               >
-                <NavLink to="#" style={{textDecoration:'none'}}>
+                <NavLink to="#" style={{ textDecoration: "none" }}>
                   <div className={p.bottomBarEl}>
                     <div style={{ gridArea: "img" }}>
                       <i
@@ -113,27 +132,41 @@ const Content = (props) => {
                         }}
                       ></i>
                     </div>
-                    <div style={{ gridArea: "text", display:'flex', alignSelf:'center' }}>
-                        <p style={{fontSize:'15px', width:'100%', height:'16px', margin:'0', color:'gray', fontFamily:'sans-serif',}}>
-                            Фото/Відео
-                        </p>
+                    <div
+                      style={{
+                        gridArea: "text",
+                        display: "flex",
+                        alignSelf: "center",
+                      }}
+                    >
+                      <p
+                        style={{
+                          fontSize: "15px",
+                          width: "100%",
+                          height: "16px",
+                          margin: "0",
+                          color: "gray",
+                          fontFamily: "sans-serif",
+                        }}
+                      >
+                        Фото/Відео
+                      </p>
                     </div>
-                    
-                    
                   </div>
                 </NavLink>
               </div>
-              <div className={p.background_hover}
+              <div
+                className={p.background_hover}
                 style={{
                   gridArea: "threeColumn",
-                  borderRadius:'10px',
+                  borderRadius: "10px",
                   padding: "8px",
                   height: "24px",
                   display: "flex",
                   justifyContent: "center",
                 }}
               >
-                <NavLink to="#" style={{textDecoration:'none'}}>
+                <NavLink to="#" style={{ textDecoration: "none" }}>
                   <div className={p.bottomBarEl}>
                     <div style={{ gridArea: "img" }}>
                       <i
@@ -149,13 +182,26 @@ const Content = (props) => {
                         }}
                       ></i>
                     </div>
-                    <div style={{ gridArea: "text", display:'flex', alignSelf:'center' }}>
-                        <p style={{fontSize:'15px', width:'100%', height:'16px', margin:'0', color:'gray', fontFamily:'sans-serif',}}>
-                            Feeling/activity
-                        </p>
+                    <div
+                      style={{
+                        gridArea: "text",
+                        display: "flex",
+                        alignSelf: "center",
+                      }}
+                    >
+                      <p
+                        style={{
+                          fontSize: "15px",
+                          width: "100%",
+                          height: "16px",
+                          margin: "0",
+                          color: "gray",
+                          fontFamily: "sans-serif",
+                        }}
+                      >
+                        Feeling/activity
+                      </p>
                     </div>
-                    
-                    
                   </div>
                 </NavLink>
               </div>

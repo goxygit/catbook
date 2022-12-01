@@ -1,0 +1,77 @@
+.storisBar{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    max-width: 130px;
+    width:130px;
+    height: 100%;
+    max-height: 230px;
+    border-radius: 8px;
+    min-width: 90px;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+}
+.divIn{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg,var(rgba(0, 0, 0, 0.4)),transparent);
+}
+.hover:hover{
+    
+    transform: scale(1.02);
+}
+
+.svgProfile{
+    border-radius: 30px;
+    object-fit: cover;
+
+}
+.topStorisBar{
+        grid-area: topStorisBar;
+}
+.bottomStorisBar{
+        grid-area: bottomStorisBar;
+        max-width: 100%;
+        width: 100%;
+    
+}
+.bar_1{
+    display: grid;
+    padding: 8px 0 24px;
+    height:230px;
+    background-color: #F0F2F5;
+    grid-template: 230px / 136px 136px 136px 136px 136px;
+    grid-template-areas: "bar1 bar2 bar3 bar4 bar5";
+}
+.gap{
+    column-gap: 8px;
+}
+.storisBar:hover{
+    background-color: #E4E6EB;
+    border-radius: 10px;
+}
+.storisBar:hover .topStorisBar{
+    transition: 0.3s;
+    transform: scale(1.02);
+}
+.topStorisBar:before {
+    content: "";
+    border-radius: 10px;
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(70, 68, 68, 0.288);
+  }
+.storisBar:hover .topStorisBar:before {
+    display: block; 
+  }
