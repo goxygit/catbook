@@ -12,11 +12,12 @@ const Content = (props) => {
         display: "flex",
         justifyContent: "center",
         padding: "0 32px",
+        position: "relative",
       }}
     >
       <div className={p.Profile}>
         <div className={classNames(p.firstBar)}>
-          <Storis img={props.img}/>
+          <Storis img={props.img} />
         </div>
         <div className={classNames(p.twoBar, p.gap)}>
           <div
@@ -209,10 +210,16 @@ const Content = (props) => {
           </div>
         </div>
         <div className={classNames(p.threeBar, p.gap)}>
-          <div
-            className={classNames(p.contentBar, p.box_shadow, p.bar_3)}
-            style={{ padding: "8px 0" }}
-          ></div>
+          <div style={{ height: "58px", width: "100%" }}>
+            <div
+              className={classNames(p.contentBar, p.box_shadow, p.bar_3)}
+              style={{ padding: "4px 0" }}
+            >
+              <div style={{ height: "40px", width: "100%", padding: "8px 0" }}>
+                <div style={{height:'100%', width:'100%'}}></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -25,12 +25,13 @@
 
 .headerInput {
     grid-area: input;
-    align-self: center;
-    justify-self: center;
     max-width:680px;
     width: 100%;
     min-width: 320px;
-
+    
+}
+.label{
+    position: relative;
 }
 
 .label input {
@@ -153,4 +154,36 @@ border-radius: 30px;}
     display: flex;
     align-items: center;
     align-self: center;
+}
+.dropdownField{
+    display: none;
+
+}
+.dropdownFieldFocus{
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+    max-width: 680px;
+    width: 664px;
+    min-width: 532px;
+    padding: 8px;
+}
+.spanInField{
+    z-index: 1;
+    color:#65676B;
+    font-weight: 400;
+    font-family: inherit;
+}
+.spanInField:before{
+    content: '';
+    margin-top: -5px;
+    height: 0;
+}
+.spanInField:after{
+    content: '';
+    margin-bottom: -4px;
+    height: 0;
 }

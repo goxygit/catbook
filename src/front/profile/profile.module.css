@@ -21,6 +21,7 @@
 }
 .firstBar{
     grid-area: firstBar;
+    z-index: 0;
 }
 .twoBar{
     grid-area: twoBar;

@@ -1,6 +1,4 @@
-body{
-  font-family: 'Segoe UI Historic';
-}
+
 .app-wrapper{
   display: grid;
   grid-template: 56px 100%/300px auto 360px;
