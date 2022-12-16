@@ -1,8 +1,8 @@
-import Content from './content'
+import Content from './content/content-container'
 const Profile = (props) =>{
     return(
         <div>
-            <Content img={props.img}/>
+            <Content/>
         </div>
     )
 }

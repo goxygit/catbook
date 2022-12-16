@@ -134,7 +134,7 @@ const SideBar = (props) => {
           <div>
             <div className={classNames(n.navLink_5, n.background_hover)}>
               <div className={n.spanNav}>
-                <NavLink className={classNames(n.a, n.label)}>
+                <NavLink to="message" className={classNames(n.a, n.label)}>
                   <i
                     style={{
                       backgroundImage:

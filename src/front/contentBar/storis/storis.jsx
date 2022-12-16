@@ -36,7 +36,7 @@ const Storis = (props) => {
               position: "relative",
               width: "40px",
               height: "40px",
-              position:'absolute'
+              position: "absolute",
             }}
           >
             <div
@@ -63,13 +63,13 @@ const Storis = (props) => {
         }}
       >
         <NavLink to="#" style={{ textDecoration: "none" }}>
-        <div
+          <div
             style={{
               padding: "12px",
               position: "relative",
               width: "40px",
               height: "40px",
-              position:'absolute'
+              position: "absolute",
             }}
           >
             <div
@@ -96,13 +96,13 @@ const Storis = (props) => {
         }}
       >
         <NavLink to="#" style={{ textDecoration: "none" }}>
-        <div
+          <div
             style={{
               padding: "12px",
               position: "relative",
               width: "40px",
               height: "40px",
-              position:'absolute'
+              position: "absolute",
             }}
           >
             <div
@@ -129,13 +129,13 @@ const Storis = (props) => {
         }}
       >
         <NavLink to="#" style={{ textDecoration: "none" }}>
-        <div
+          <div
             style={{
               padding: "12px",
               position: "relative",
               width: "40px",
               height: "40px",
-              position:'absolute'
+              position: "absolute",
             }}
           >
             <div

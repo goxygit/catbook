@@ -3,14 +3,12 @@ import h from "./header.module.css";
 import classNames from "classnames";
 import logo from "../img/Profile.png";
 import React from "react";
-import { updateHeaderInputText } from "../../redux/headerReducer";
 const Header = (props) => {
   let inputElement = React.createRef();
   let dropoutUnderInput = React.createRef();
   let onPostChange =()=>{
     let text = inputElement.current.value
-    let action = updateHeaderInputText(text)
-    props.dispatch(action)
+    props.updateNewText(text)
   }
   return (
     <div className={h.header}>
@@ -51,7 +49,7 @@ const Header = (props) => {
                placeholder="Свої забаганки сюди будь-ласка"
                ref={inputElement}
                onChange={onPostChange}
-               value={props.headerBar.inputSearch.textValue}
+               value={props.textValue}
               />
             </label>
           </div>

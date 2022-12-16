@@ -1,8 +1,7 @@
 import p from "./profile.module.css";
 import classNames from "classnames";
-import logo from "../img/Profile.png";
-import plus from "../img/plus.png";
-import Storis from "./storis/storis";
+import logo from "../../img/Profile.png";
+import Storis from "../storis/storis";
 import { NavLink } from "react-router-dom";
 const Content = (props) => {
   return (
@@ -17,7 +16,7 @@ const Content = (props) => {
     >
       <div className={p.Profile}>
         <div className={classNames(p.firstBar)}>
-          <Storis img={props.img} />
+          <Storis img={props.contentBar.img} />
         </div>
         <div className={classNames(p.twoBar, p.gap)}>
           <div

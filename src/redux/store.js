@@ -2,7 +2,7 @@ import profileImg from '../front/img/Profile.png'
 import back1 from '../front/img/back1.jpg'
 import back2 from '../front/img/back2.png'
 import headerReducer from './headerReducer'
-
+import contentBarReducer from './contentBarReducer'
 let store ={
     _state:{
         headerBar:{
@@ -10,8 +10,8 @@ let store ={
               textValue:'kurwa'
             }    
           },
-           contentBar:{
-              img: [
+     contentBar:{
+        img: [
                   {
                       profileImg:`${profileImg}`, back:`${back1}`
                   },
@@ -30,7 +30,7 @@ let store ={
                   {
                       profileImg:`${profileImg}`, back:`${back1}`
                   }
-              ]
+        ]
            },
     },
     _callSubscriber(){
@@ -45,6 +45,7 @@ let store ={
     },
     dispatch(action){
         this._state.headerBar = headerReducer(this._state.headerBar, action)
+        this._state.contentBar= contentBarReducer(this._state.contentBar, action)
         this._callSubscriber(this._state)
     },
    

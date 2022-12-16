@@ -1,19 +1,20 @@
-import Header from "./front/header/header";
+import Header from "./front//header/header-container";
 import SideBar from "./front/sideBar/sideBar";
 import "./App.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Content from "./front/profile/profile";
-import Dialogs from "./front/dialogs/dialogs";
+import Content from "./front/contentBar/profile";
+import Dialogs from "./front/contentBar/message/message";
 const App =(props) => {
+  
   return (
     <BrowserRouter>
     <div className="app-wrapper">
-      <Header dispatch={props.dispatch} headerBar={props.state.headerBar}/>
+      <Header store={props.store} />
       <SideBar />
       <div>
       <Routes>
-        <Route path="/profile"  element={<Content img={props.state.contentBar.img}/>  }/>
-        <Route path="/dialogs" element={<Dialogs />}/>
+        <Route path="/profile"  element={<Content store={props.store}/>  }/>
+        <Route path="/message" element={<Dialogs />}/>
       </Routes>
       </div>
       
